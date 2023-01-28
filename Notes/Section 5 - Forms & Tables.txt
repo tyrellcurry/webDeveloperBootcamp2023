@@ -1,0 +1,37 @@
+Section 5 - Forms & Tables
+
+Tables
+- Data tables. Tabular data.
+- td = table data (represents single cell) that contains data in a table
+- tr = table row, represents a row of cell in the table
+- th = table header
+- thead = table header
+- tbody = breaks table into logical sections (wraps row)
+- tfoot = table footer
+
+HTML Forms
+- The <form> element itself is a shell/container of elements to build the form
+- The action attribute specifies where the data should be sent
+- The method attribute specifies which kind of HTTP request should be used
+
+Input Types
+- 20+ different input types within a form
+- The type attribute determines how the input is going to behave
+
+Form Labels
+- Labels are very important in terms of accessibility 
+- You can link the label and input with the for & ID attribute 
+- When you associate a label and input, it makes the label clickable to trigger the input
+
+Form Button
+- By default a button is submittable if it's within a form element
+- The attribute type "button" will tell the browser to handle it only as a button and not submittable
+
+Name attribute:
+- Name is used for the name that passes to the sever connected to the data. Eg. username = tyrellc
+- This will indicate when the data is sent what it is labelled as
+- This helps us correctly process the data that is sent via inputs
+- With radio button groups, using the same name will group those radio buttons so only a single radio is selectable within that group
+
+Radio buttons:
+- If a value attribute is not set,  the value sent will simply be 'on'.

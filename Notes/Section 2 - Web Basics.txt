@@ -1,0 +1,49 @@
+Section 2 - Web Basics
+
+The Internet
+- The internet uses routing
+- Physical devices / other machines that connects our devices  to another device
+- Our computer's don't need to know the details of another device you're connecting to, the routing devices takes care of that
+- Our data travels via cables, there's even some under the sea deep under the ocean
+- Data makes it way via pulses of lights through the cables
+
+The Web
+- The world wide web (www) is an information system where we can share documents and resources over the internet that are identified via URLs. Information is transferred via HTTP (Hyper Text Transfer Protocol) 
+- HTTP is a protocol (a standard set of rules)
+- How it works? We generate a request to a URL asking for a particular resource, then we wait for a response from one of the servers, then it's our browser's job to translate and display those resources to me
+- There's different types of servers, but we focus on web servers (machines connected to the internet who's entire job is to satisfy requests coming in via the web)
+- There's lots that go into it, authentication, does the resource exist, etc
+- A client is another way to refer to the Machine/Device/Browser that is requesting a resource from a server 
+- Everything that happens on our side is (Client Side)
+- Everything that happens on the server is (Server Side)
+
+How do Servers respond?
+- The server responds with file(s) of code that the browser can understand and render it for us to view
+- The 3 core technologies that our browsers understand is HTML, CSS, and JS
+
+Backend
+- Backend focuses on what runs in the server
+- During a request, the response on the server doesn't simply hand over the data, there is code (instructions) needed on the server for it to work as intended
+- There's a lot of logic on the server that goes into who the user requesting the information is, what do they specifically want, what permissions do they have to view, are they logged in?
+- All that is happening on the server side before it sends anything back (satisfies the request)
+- In the backend there is many different backend languages/server side languages. Python, C, Java, Ruby, Node, etc
+
+Frontend
+- Frontend focuses on what runs in the browser
+- Once the server complete's the request, it sends back a response to the client (machine/device/browser) in the form of HTML, CSS, and JS
+- That code it sends back runs in the browser, and that is all considered frontend (client side) code
+- There's only at most 3 tools that webpages/webapps are constructed with: HTML, CSS, and JS
+
+HTML
+- HTML is a Markup Language
+- The content within the webpage
+- The underlying structure of the webpage
+
+CSS
+- CSS is a Stylesheet Language
+- The styling of the content on the webpage
+
+JS
+- JS is a programming language
+- The functionality of the content on the webpage
+- JS is responsible for all the functional features you experience on a webpage

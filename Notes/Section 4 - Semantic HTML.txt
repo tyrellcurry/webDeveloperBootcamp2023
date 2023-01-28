@@ -1,0 +1,56 @@
+Section 4 - Semantic HTML
+
+What is HTML5?
+- Latest evolution of the standard that defines HTML. It's a new version of the markup language with additional elements and features.
+- HTML is defined as a set of instruction on how HTML should work (it's a document, called the standard)
+- That document, browsers reference to understand what the HTML5 code is meant to do
+
+Inline & Block Elements:
+- This is how elements fit within the flow of the document/webpage
+- Block level elements take the entire width of the document/container
+- Inline will share the space (in-line) with other in-line elements
+
+What is a div?
+- "The Content Division Element"
+- It is a generic container to hold things or to hold things together
+- Div's are block level elements, they will take up the whole width/container
+
+What is a span?
+- A generic container that is an inline element
+- We will use it to keep elements inline, as opposed to using a div which is a block element
+- It does not take up it's own block of content
+
+Odd assortment of elements:
+- <hr> is a horizontal rule - it is a divider 
+- <br> is a line break
+- <sup> is a super script - is adding text elevated above the baseline like 8 to the power of 2
+- <sub> is a sub script element - this renders text below the baseline, like in chemistry H2O
+
+HTML Entities:
+- Example: &#9824;
+- Special code or sequence that will result in different characters. 
+- For example, something that is reserved in html or tricky to type like a copyright symbol
+- They all start with an ampersand & and end in a semi-colon ;
+- For example, wanting to use a less than or greater than brackets, those are reserved html elements, so in order to have those appear, you need to use an entity. Eg. &lt;
+- You shouldn't use an ampersand in your text either, you use should use &amp;
+- There's 2 types with the same result, there's Entity names and Entity numbers. Either is fine.
+
+Semantic Markup:
+- Semantic just means relating to meaning. 
+- Basically markup that relates or pertains to the relation of the content that the html is structuring
+- The meaning/semantic purpose could be for a crawler like Google
+- Another reason is accessibility for people using screen readers, who cannot  fully see the rendered content
+- Last reason, it makes our code easier to read and easier to navigate for ourselves and other developers
+- Semantic doesn't add any features other than adding meaning/accessibility to the markup
+
+Semantic Elements:
+- <main> - Used for content that is unique across the page. Not to be wrapping elements like navs and footers and sidebars
+	- Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+- <nav> - Represents anything on the page that contains navigation links
+- <section> - A stand alone section on the page. 
+- <article> - A self contained composition. That is intended to be distributed or re-used. 
+- <aside> - Something that isn't essential to the document, but something that is related. Example a sidebar, or callout box.
+- <header> - Introductory content (you can have headers nested inside an article) - can be used more than once on the page
+- <footer> - Closing content (you can have a footer in an article) - can be used more than once on the page
+- <time> - Used for time or date elements
+- <figure> - A self contained piece of content with an optional content (<figcaption>) Like an illustration or diagram

@@ -1,0 +1,7 @@
+Section 3 - HTML Basics
+
+What is HTML?
+- A markup language
+- HTML is to build the structure of the webpage or web app
+- All elements consist of an opening and closing tag
+- All html elements references in MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
