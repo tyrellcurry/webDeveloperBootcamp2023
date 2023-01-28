@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reddit Search Form Submission</title>
+        <!-- Simple page and form css styling -->
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            main, form {
+                width: fit-content;
+                margin: auto;
+            }
+            form input {
+                padding: .35rem .5rem;
+                font-size: 1rem;
+            }
+            form input, form button {
+                border-radius: .25rem;
+            }
+            form button {
+                border: none;
+                background-color: rgb(75, 75, 250);
+                color: white;
+                padding: .5rem .75rem;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            form button:hover {
+                background-color: rgb(86, 86, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Search Reddit using this form!</h1>
+            <!-- 
+                - The action attribute is where the form's data is being sent to.
+                - The method is the HTTP request type (default get), adding just as an example.
+            -->
+            <form action="https://www.reddit.com/search" method="get">
+                <!-- The label for attribute links it to the matching input's ID -->
+                <label for="search"></label>
+                <!-- The name attribute is the key of the input value -->
+                <input
+                    type="text"
+                    id="search"
+                    name="q"
+                    placeholder="Type something here..." />
+                <!-- 
+                    - By default, a button placed in a form will submit it. 
+                    - However, the Form is submittable without a button by pressing enter in an input.
+                -->
+                <button>Search Reddit</button>
+            </form>
+        </main>
+    </body>
+</html>
