@@ -1,0 +1,62 @@
+What is CSS?
+- CSS is a cascading style sheet
+- CSS is a styling language that edits the appearance of our html
+- h1 { color: blue; } - css rule
+- h1 - selector
+- color - property
+- blue - value
+- The semicolon ; is essential in CSS and must be used at the end of a value
+
+How to apply CSS to an element
+- Inline styling
+- Inside a <style> element
+- External CSS file linked in the HTML
+
+Colors
+- Named (eg. purple)
+- Hex (eg. #ffffff)
+- RGB/RGBA (eg. rgb(214, 122, 127)
+- HSL/HSLA (eg. 30, 100%, 50%)
+-  Initial
+- A typical computer can display over 16 million colors
+
+CSS Text Properties
+- Absolute font sizes examples
+	- px, pt, cm, in, mm
+- Relative font sizes examples
+	- em, rem, vh, vw, %
+- Indicating sans-serif or serif at the end of the declared font-family value, will default to the backup that the system recognizes best. 
+
+CSS Selectors:
+- * is an universal selector, which selects everything on the page
+- Multiple selectors can be used in a single rule separated by comma
+- ID's can be targetted by a hash symbol, and class by a period
+- Targeting an element with a class, you can target it without a space between the element and the class (eg. button.submit)
+- The descendant selector is declared via a space between the selectors
+	- This selector targets nested elements that match the selector (eg. span  a)
+- The adjacent selector is declared via a plus (+) symbol (combinator) 
+	- Selecting elements that immediately proceed the first selector (eg. h1 + p)
+	- In other words, elements that come immediately after the first selector that are adjacent (not children or parents). There also cannot be elements between these elements, in that case the element would not come immediately after.
+- The direct child / direct descendant selector is declared via a > symbol
+- The attribute selector - target element by attribute
+	- Eg. input[type="text"]
+	- You can select by any attribute
+	- MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors 
+- Pseudo Classes
+	- Single colon :
+	- Keywords that we add to the end of a selector to indicate certain states of the elements
+	- Eg. input[type="checkbox"]:checked - a checked checkbox
+- Pseudo Elements
+	- Two colons ::
+	- Selectors that let you select specific parts of the element
+	- Eg. p::first-letter - selects the first select of every paragraph element
+- Specificity 
+	- What rules to apply when there's a conflict of declarations
+	- The more specific you are with the element's location, it will win
+	- Eg. p {color:red;} vs section p {color:blue;} < this one wins
+	- ID > Class > Element (order of specifity)
+	- Inline styles will take specifity
+- Inheritance
+	- A style inherited from a parent element
+	- Certain elements don't inherit styles by default
+	- For example, on a button element you can set the color:inherit to inherit the parent styling if declared 
