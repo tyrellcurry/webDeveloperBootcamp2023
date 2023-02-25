@@ -1,0 +1,29 @@
+Section 17 - JS Arrays
+
+Arrays
+- Index's are ordered by indices starting at 0
+- Push - Add to end of array
+- Pop - Remove from end
+- Shift - Remove from start
+- Unshift - Add to start
+- Concat - Merges two or more arrays
+
+
+References and Equality
+
+When we store a number in a var, there is a certain amount of space allocated in memory for that specific number.
+With arrays that is not the case - an array could have 10,000 arrays of arrays, which can take up a lot of space. The way it's stored is a bit different. What it does is stores a reference to the array in relation to the variable.  So the variable is essentially a reference to the array that is stored in memory. Each array will be distinct unlike let x = 3. and let y = 3, therefore x === y is true since they are both referencing the same space in memory. However if you try to equality test two arrays, it will never be true, since they are not the same reference in memory. 
+
+Another point is if I assign let nums = [1,2,3] and also assign let numsCopy = nums, both variables are pointing to the same reference in memory. Which means when one of the variables (the array) is changed, it will also change for the other variable, since both variables are referencing the same array in memory. They are linked. 
+
+Now if I were to do nums === numsCopy, I would get true, because they are literally the same array (one array stored in memory which 2 variables referencing it).
+
+
+Arrays & Const
+
+We can use const for arrays, because it's referencing the array, and that array is mutable. As long as that reference doesn't change, it's fine. The array can be edited as much as we like. However, if we try to change the const to a different reference or assignment, then we'll receive an error.
+
+
+Multi-Dimensional Arrays
+
+An array can store nested arrays, and objects, really as much as we'd like with as much as a combination as we'd like. 
